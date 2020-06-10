@@ -1,0 +1,17 @@
+# %% The name of the task from the ticket in the task tracker %%
+%% Link to ticket in task tracker %%
+
+## Description of changes
+[comment]: # (
+Briefly describe all changes in Russian, with formatting.
+The description should only relate to changes in functionality.
+If the refactoring is carried out, then we simply write "the code of a certain service / component has been refactored")
+
+## Related tasks
+[comment]: # (Enumerate related tasks \ (PRs \), if any)
+
+## Author
+[comment]: # (author of PR - line: Last name or Last name First name or slack mention)
+
+## Manager
+[comment]: # (supervising manager \ (similar to author \))
