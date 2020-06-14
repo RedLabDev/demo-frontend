@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "react-app",
+    "prettier"
+  ],
+  "rules": {
+    "jsx-quotes": [
+      1,
+      "prefer-double"
+    ],
+    "react/prop-types": 1,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "simple-import-sort/sort": [
+      "error",
+      {
+        "groups": [
+          // Packages. `react` related packages come first.
+          [
+            "^react",
+            "^\\u0000",
+            "^@?\\w",
+            "^[^.]",
+            "^\\."
+          ],
+          // Style imports.
+          ["^.+\\.s?css$"]
+        ]
+      }
+    ]
+  },
+  "plugins": [
+    "simple-import-sort",
+    "prettier"
+  ]
+}
