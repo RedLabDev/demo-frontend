@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-display: swap;
+  src: local('Roboto-Regular'), local('Roboto'), url('../../assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  font-display: swap;
+  src: local('Roboto-Bold'), local('Roboto'), url('../../assets/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+:root {
+  --font-family-base: 'Roboto-Regular', sans-serif;
+  --font-family-bold: 'Roboto-Bold', sans-serif;
+  --font-size-base: 14px;
+  --font-color-base: white;
+}

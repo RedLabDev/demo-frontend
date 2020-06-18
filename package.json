@@ -1,0 +1,77 @@
+{
+  "name": "demo-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "stylelint": "npx stylelint \"src/**/*.css\"",
+    "stylelint-fix": "npx stylelint \"src/**/*.css\" --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "npx prettier --write \"src/**/*.{json,jsx,js,css}\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-react-app": "^5.2.0",
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "eslint-plugin-simple-import-sort": "^5.0.2",
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1",
+    "prettier-stylelint": "^0.4.2",
+    "react-app-rewired": "^2.1.5",
+    "stylelint": "^13.3.3",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.17.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json}": [
+      "prettier --config=.prettierrc --write",
+      "git add"
+    ],
+    "src/**/*.css": [
+      "npx stylelint \"src/**/*.css\" --fix",
+      "prettier --config=.prettierrc --parser=css --write",
+      "git add"
+    ],
+    "public/*.html": [
+      "prettier --config=.prettierrc --parser=html --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
